@@ -53,23 +53,23 @@ export default function AdminDashboard() {
                 <section className="glass p-8 rounded-[40px] border-white/10">
                     <div className="flex justify-between items-center mb-6">
                         <h2 className="text-2xl font-black">Pizarra del Día (Banner)</h2>
-                        <button className="px-6 py-2 bg-bolivia-green text-white rounded-full font-bold flex items-center gap-2 hover:scale-105 transition-all">
+                        <button className="px-6 py-2 bg-nicolasa-orange text-white rounded-full font-bold flex items-center gap-2 hover:scale-105 transition-all shadow-lg shadow-nicolasa-orange/20">
                             <Save size={18} /> Guardar Cambios
                         </button>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <div className="space-y-4">
-                            <label className="block text-sm font-bold opacity-60 uppercase tracking-widest">Título</label>
+                            <label className="block text-sm font-bold opacity-60 uppercase tracking-widest text-white/60">Título</label>
                             <input
                                 type="text"
                                 defaultValue="¡PLATO ESTRELLA!"
-                                className="w-full p-4 rounded-2xl glass-dark border border-white/10 focus:outline-none"
+                                className="w-full p-4 rounded-2xl glass-dark border border-white/10 focus:outline-none focus:border-nicolasa-orange/50 transition-colors"
                             />
-                            <label className="block text-sm font-bold opacity-60 uppercase tracking-widest">Contenido</label>
+                            <label className="block text-sm font-bold opacity-60 uppercase tracking-widest text-white/60">Contenido</label>
                             <textarea
                                 defaultValue="Pique a lo Macho"
                                 rows={3}
-                                className="w-full p-4 rounded-2xl glass-dark border border-white/10 focus:outline-none"
+                                className="w-full p-4 rounded-2xl glass-dark border border-white/10 focus:outline-none focus:border-nicolasa-orange/50 transition-colors"
                             />
                         </div>
                         <div className="glass-dark rounded-[30px] flex items-center justify-center p-4">
@@ -87,7 +87,7 @@ export default function AdminDashboard() {
                 <section className="glass p-8 rounded-[40px] border-white/10">
                     <div className="flex justify-between items-center mb-8">
                         <h2 className="text-2xl font-black">Gestión de Productos</h2>
-                        <button className="px-6 py-2 border-2 border-bolivia-yellow text-bolivia-yellow rounded-full font-bold flex items-center gap-2 hover:bg-bolivia-yellow hover:text-black transition-all">
+                        <button className="px-6 py-2 border-2 border-nicolasa-orange text-nicolasa-orange rounded-full font-bold flex items-center gap-2 hover:bg-nicolasa-orange hover:text-white transition-all">
                             <Plus size={18} /> Agregar Plato
                         </button>
                     </div>
@@ -105,7 +105,7 @@ export default function AdminDashboard() {
                             <tbody>
                                 <tr className="border-b border-white/5 hover:bg-white/5 transition-colors">
                                     <td className="py-4 px-4 font-bold">Pique a lo Macho</td>
-                                    <td className="py-4 px-4 text-bolivia-yellow font-black">$15.000</td>
+                                    <td className="py-4 px-4 text-nicolasa-orange font-black">$15.000</td>
                                     <td className="py-4 px-4 opacity-60 italic text-sm">Para 1 o 2 personas</td>
                                     <td className="py-4 px-4 flex gap-2">
                                         <button className="p-2 rounded-lg hover:bg-blue-500/20 text-blue-400 decoration-transparent">Editar</button>

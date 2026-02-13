@@ -25,8 +25,8 @@ export default function MenuList() {
                             key={cat.id}
                             onClick={() => setActiveCategory(cat.slug)}
                             className={`px-6 py-2 rounded-full font-bold transition-all ${activeCategory === cat.slug
-                                    ? 'bg-bolivia-red text-white shadow-lg'
-                                    : 'hover:bg-white/10'
+                                ? 'bg-nicolasa-orange text-white shadow-lg shadow-nicolasa-orange/20'
+                                : 'hover:bg-white/10 text-white/60 hover:text-white'
                                 }`}
                         >
                             {cat.name}

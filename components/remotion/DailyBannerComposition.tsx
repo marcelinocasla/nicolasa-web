@@ -14,7 +14,7 @@ export const DailyBannerComposition: React.FC<{ title: string; content: string }
     const translateY = interpolate(frame, [0, 30], [50, 0], { extrapolateRight: 'clamp' });
 
     return (
-        <AbsoluteFill className="bg-[#1a1a1a] flex items-center justify-center p-20 font-sans border-[10px] border-[#3d2b1f] rounded-[40px]">
+        <AbsoluteFill className="bg-black flex items-center justify-center p-20 font-sans border-[10px] border-nicolasa-orange/20 rounded-[40px]">
             <div
                 style={{
                     opacity,
@@ -23,14 +23,14 @@ export const DailyBannerComposition: React.FC<{ title: string; content: string }
                 }}
                 className="text-center w-full"
             >
-                <h1 className="text-bolivia-yellow text-6xl font-black mb-8 uppercase tracking-widest italic">
+                <h1 className="text-nicolasa-orange text-6xl font-black mb-8 uppercase tracking-widest italic">
                     {title}
                 </h1>
-                <div className="h-2 w-48 bg-bolivia-red mx-auto mb-12 rounded-full" />
+                <div className="h-2 w-48 bg-white/20 mx-auto mb-12 rounded-full" />
                 <p className="text-white text-8xl font-black leading-tight drop-shadow-2xl">
                     {content}
                 </p>
-                <div className="mt-12 text-bolivia-green text-4xl font-bold animate-pulse">
+                <div className="mt-12 text-white/60 text-4xl font-bold animate-pulse">
                     ¡LOS ESPERAMOS!
                 </div>
             </div>
